@@ -15,8 +15,19 @@
 ### 3.申请阿里云AccessKey
 从[https://ak-console.aliyun.com/#/accesskey](https://ak-console.aliyun.com/#/accesskey) 申请即可，\<key>参数对应AccessKeyId，\<secret>对应AccessKeySecret
 
-### 4.使用方法
-    python3 aliddns.py <key> <secret> <rr> <domain> [--ipv6]
+### 4.使用方法 
+    查看使用说明
+    python3 aliddns.py --help
+    自动更新域名IP
+    python3 aliddns.py [-h] [--ipv6] <key> <secret> <rr> <domain>
+    必选参数:
+    key         从https://ak-console.aliyun.com/#/accesskey得到的AccessKeyId
+    secret      从https://ak-console.aliyun.com/#/accesskey得到的AccessKeySecret
+    rr          例子：@, *, www, ...
+    domain      例子: aliyun.com, baidu.com, google.com, ...
+    可选参数:
+    --ipv6      使用本机的ipv6地址
+
 ###### 例子
     python aliddns.py ABDGDJSKN QWERTYUIOPASDG pan baidu.com
     python aliddns.py ABDGDJSKN QWERTYUIOPASDG pan baidu.com --ipv6
