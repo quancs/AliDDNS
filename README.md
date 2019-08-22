@@ -13,7 +13,7 @@
     pip3 install aliyun-python-sdk-alidns
 
 ### 3.申请阿里云AccessKey
-从https://ak-console.aliyun.com/#/accesskey申请即可，<key>参数对应AccessKeyId，<secret>对应AccessKeySecret
+从[https://ak-console.aliyun.com/#/accesskey](https://ak-console.aliyun.com/#/accesskey) 申请即可，<key>参数对应AccessKeyId，<secret>对应AccessKeySecret
 
 ### 4.使用方法
     python3 aliddns.py <key> <secret> <rr> <domain> [--ipv6]
