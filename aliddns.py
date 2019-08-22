@@ -50,7 +50,7 @@ def addDomainRecord(client,rr,domain,ip,type):
 
 def updateDomainRecord(client,rr, domain, ip, type):
     records = getRecords(client,rr,domain)
-
+    record_id=None
     for record in records:
         if record['RR'] == rr and record['DomainName']==domain and record['Type']==type:
             record_id=record['RecordId']
