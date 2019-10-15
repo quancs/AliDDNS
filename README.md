@@ -35,7 +35,7 @@
 ### 5.crontab定时执行
     crontab -e
     文件末尾添加一行，功能：每5分钟执行一次
-    */5 * * * * python3 /home/xxx/aliddns.py ABDGDJSKN QWERTYUIOPASDG pan baidu.com
+    */5 * * * * python3 /home/xxx/aliddns.py ABDGDJSKN QWERTYUIOPASDG pan baidu.com > /dev/null
     是否成功设置，请在阿里云手动修改后，观察是否自动修改
 
 # 参考项目
