@@ -21,10 +21,10 @@ def getRealIp():
 
 # 利用API获取IP
 def getRealIpV6():
-    url = "https://v6.ident.me/"
+    url = "https://api-ipv6.ip.sb/ip"
     response = urllib.request.urlopen(url)
     html = response.read().decode('utf-8')
-    return html
+    return html.strip()
 
 def getRecords(client,rr,domain):
     request= DescribeDomainRecordsRequest()
