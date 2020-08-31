@@ -8,8 +8,6 @@
     
 ### 2.安装阿里云sdk
 
-    pip3 install aliyun-python-sdk-core
-    
     pip3 install aliyun-python-sdk-alidns
 
 ### 3.申请阿里云AccessKey
