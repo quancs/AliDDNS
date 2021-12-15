@@ -77,8 +77,7 @@ def updateDomainRecord(client,rr, domain, ip, type):
             print(str(response, encoding='utf-8'))
             return json.loads(response)['RecordId']
 
-#updateDomainRecord('pan4','quancs.site',getRealIp())
-
+        
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.description = '阿里云云解析工具'
